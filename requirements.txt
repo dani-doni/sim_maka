@@ -3,4 +3,4 @@ streamlit
 numpy
 streamlit_authenticator
 time
-pyyaml
+
