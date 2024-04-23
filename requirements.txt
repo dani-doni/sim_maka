@@ -1,7 +1,6 @@
 pandas
-folium
-streamlit-folium
 streamlit
-altair
 numpy
 streamlit_authenticator
+time
+yaml
