@@ -1,0 +1,33 @@
+cookie:
+  expiry_days: 60
+  key: danieles_signature_key
+  name: danieles_cookies
+credentials:
+  usernames:
+    admin:
+      email: centrostudi@makaconsulting.it
+      failed_login_attempts: 0
+      logged_in: false
+      name: Maka Admin
+      password: $2b$12$q5Ncl1OrfZlHr3c3t0S9FOiLvmHuly3GO79qZ84P5AclQD94adLHu
+    ddoninelli00:
+      email: dani.doni74@gmail.com
+      failed_login_attempts: 0
+      logged_in: true
+      name: Daniele Doninelli
+      password: $2b$12$DGq4l3VvduovAfSXJFtXTuMF61FtL65aVUxKSqoa8lMbG1C6wZLjK
+    katiacazza:
+      email: cazzavaccakatia@yahoo.it
+      failed_login_attempts: 0
+      logged_in: false
+      name: Katia Cazzavacca
+      password: $2b$12$/SC.qFZ1F1X6dic6vJk38.Q1juJ53c6BU7mjA7JamRrjhXMDh9lmm
+    manu_angeloni:
+      email: manuela.angeloni@makaconsulting.it
+      failed_login_attempts: 0
+      logged_in: false
+      name: Manuela Angeloni
+      password: $2b$12$XdGenAqgioc0CUYyLYXlhe.MLT9OCYnGSCsl7lP.qB1DChe4Wl/XG
+pre-authorized:
+  emails:
+  - melsby@gmail.com
