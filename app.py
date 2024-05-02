@@ -359,22 +359,22 @@ def step2_2():
                     st.error(f"❌ L'opzione' {user_answer_3} è sbagliata. Seleziona quella corretta per procedere all'invio")
         
         # question 4
-        question_4 = '''Selezionare il bando alla quale si sta partecipando (Bando ISI 2024):*'''
-        options_4 = ["Blando ISI 2024","Bando ISSI 2024","Bando ISI 202","Bando ISI 2023","Bando ISI 2034","Bando SIS 2024","Blando ISI 2024","Bando ISI 2024","Band ISI 2024","ISI Bando 2024","Bando ISI"]
+        question_4 = '''Selezionare il bando alla quale si sta partecipando (Bando Isi 2023):*'''
+        options_4 = ["Blando ISI 2023","Bando ISSI 2023","Bando ISI 202","Bando Isi 2023","Bando Isi 2034","Bando SIS 2024","Blando ISI 2024","Bando ISI 2023","Band ISI 2023","ISI Bando 2024","Bando ISI"]
         user_answer_4 = st.selectbox (question_4, options_4, index=None, placeholder="Seleziona una risposta",)
         if user_answer_4 is not None:
-            if "Bando ISI 2024" in user_answer_4:
+            if "Bando Isi 2023" in user_answer_4:
                 st.session_state.domanda_4 = 1
             else:
                 if st.session_state.warning == 1:
                     st.error(f"❌ L'opzione' {user_answer_4} è sbagliata. Seleziona quella corretta per procedere all'invio")
         
         # question 5
-        question_5 = '''Seleziona l'importo (273.700.000.000) dello stanziamento del bando*'''
-        options_5 = ["273.700.000.000", "273.070.000.000", "273.707.000.000", "277.300.000.000","273.700.000.007","273.700.003.000"]
+        question_5 = '''Seleziona l'importo (508.400.000,00) dello stanziamento del bando*'''
+        options_5 = ["508.400.000,00", "508.000.000,00", "508.040.000,00", "508.000.004,00","508.400.400,00","500.400.000,00"]
         user_answer_5 = st.selectbox(question_5, options_5, index=None, placeholder="Seleziona una risposta")
         if user_answer_5 is not None:
-            if "273.700.000.000" in user_answer_5:
+            if "508.400.000,00" in user_answer_5:
                 st.session_state.domanda_5 = 1
             else:
                 if st.session_state.warning == 1:
@@ -583,10 +583,8 @@ def step3():
     st.subheader(f"Hai impiegato: {total_time} secondi")
     if total_time <= 60:
         st.success("Complimenti! Hai impiegato meno di 60 secondi. Con questo tempo la probabilità di vincere il Click Day è molto alta!")
-    elif total_time <= 120:
-        st.info("Hai impiegato più di 60 secondi. Fai attenzione, con questo tempo la probabilità di vincere il Click Day è molto bassa.")
     else:
-        st.warning("Attenzione! Hai impiegato più di 120 secondi. Se superi questo limite anche il giorno del Click Day, non ti verrà riconosciuta nessuna remuneazione. Riprova per migliore il tuo tempo.")
+        st.info("Hai impiegato più di 60 secondi. Fai attenzione, con questo tempo la probabilità di vincere il Click Day è molto bassa. Allenati ancora per migliorare il tuo tempo e avere più possibilità di vincere!")
     
     # Add button to come back to step 1
     st.button('Torna alla Home e ripeti simulazione', on_click=go_to_first_page)
