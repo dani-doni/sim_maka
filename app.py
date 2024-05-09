@@ -32,20 +32,24 @@ authenticator = stauth.Authenticate(
 
 if 'step' not in st.session_state:
     st.session_state.step = 1
+    st.session_state.sim = 1
 
 def go_to_first_page():
     st.session_state.step = 1
 
 def go_to_second_page_1():
     st.session_state.step = 2.1
+    st.session_state.sim = 2.1
     st.session_state.start_time = time.time()
 
 def go_to_second_page_2():
     st.session_state.step = 2.2
+    st.session_state.sim = 2.2
     st.session_state.start_time = time.time()
     
 def go_to_second_page_3():
     st.session_state.step = 2.3
+    st.session_state.sim = 2.3
     st.session_state.start_time = time.time()
 
 def go_to_third_page():
@@ -60,7 +64,8 @@ def go_to_third_page():
         'name': [st.session_state.name],
         'username': [st.session_state.username],
         'performance': [total_time],
-        'data': [data]
+        'data': [data],
+        'simulation': [st.session_state.sim]
     })
     df = pd.concat([df, new_row], ignore_index=True)
 
@@ -129,8 +134,6 @@ def step1():
     st.subheader('Benvenuto/a nel simulatore di Maka Consulting')
     multi = '''Questa web-app è stata concepita per darvi la possibilità di simulare il Click Day INAIL 2024 e comprenderne al meglio il funzionamento. \n
 Sotto avete a disposizione tre diverse simulazioni che si possono provare quante volte si vuole. \n
-
-ALTRE INFO UTILI...
     '''
     st.markdown(multi)
     col1, col2, col3 = st.columns(3)
