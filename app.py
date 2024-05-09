@@ -32,24 +32,24 @@ authenticator = stauth.Authenticate(
 
 if 'step' not in st.session_state:
     st.session_state.step = 1
-    st.session_state.sim = 1
+    st.session_state.sim = 0
 
 def go_to_first_page():
     st.session_state.step = 1
 
 def go_to_second_page_1():
     st.session_state.step = 2.1
-    st.session_state.sim = 2.1
+    st.session_state.sim = 1
     st.session_state.start_time = time.time()
 
 def go_to_second_page_2():
     st.session_state.step = 2.2
-    st.session_state.sim = 2.2
+    st.session_state.sim = 2
     st.session_state.start_time = time.time()
     
 def go_to_second_page_3():
     st.session_state.step = 2.3
-    st.session_state.sim = 2.3
+    st.session_state.sim = 3
     st.session_state.start_time = time.time()
 
 def go_to_third_page():
