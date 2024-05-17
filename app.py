@@ -181,6 +181,7 @@ def step2_1():
     st.subheader('BANDO SIMULATO - Convalida e invio della domanda')
     st.markdown('''i campi contrassegnati dal simbolo * sono obbligatori''')
     with st.container(border=True):
+        st.markdown(st.session_state.start_time)
         st.markdown('''INSERIMENTO DATI\n''')
         st.markdown('''Per procedere con l'invio della domanda è necessario completare i seguenti campi.\n''')
     
@@ -562,10 +563,11 @@ def step2_3():
             st.button('Invia', on_click=check_results(not_equal_to_1), type="primary")
 
 def step2_4():
-   
+    
     st.subheader('BANDO SIMULATO - Convalida e invio della domanda')
     st.markdown('''i campi contrassegnati dal simbolo * sono obbligatori''')
     with st.container(border=True):
+        st.markdown(st.session_state.start_time)  
         st.markdown('''INSERIMENTO DATI\n''')
         st.markdown('''Riepilogo dati inseriti.\n''')
 
