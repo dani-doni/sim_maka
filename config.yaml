@@ -1,5 +1,5 @@
 cookie:
-  expiry_days: 60
+  expiry_days: 90
   key: danieles_signature_key
   name: danieles_cookies
 credentials:
