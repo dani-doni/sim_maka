@@ -582,7 +582,7 @@ def step2_4():
         st.button('Invia', on_click=go_to_third_page(), type="primary")
 
 def step3():
-    st.session_state.start_time 
+    
     total_time = st.session_state.finish_time - st.session_state.start_time
     st.subheader('Hai terminato la simulazione!')
     st.subheader(f"Hai impiegato: {total_time} secondi")
@@ -593,6 +593,8 @@ def step3():
     
     # Add button to come back to step 1
     st.button('Torna alla Home e ripeti simulazione', on_click=go_to_first_page)
+
+    st.session_state
 
 
 if __name__ == "__main__":
